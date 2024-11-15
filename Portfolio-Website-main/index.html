@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rishabh shetty, portfolio, rishabh, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Rishabh's Portfolio. Data Science and Software Development Enthusiast" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio | Rishabh Shetty</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Rishabh</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home" style="
+    background-image: url('./assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;">
+    
+    <div id="particles-js" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;"></div>
+
+    <div class="content" style="z-index: 1; text-align: left;">
+        <h2>Hi There,<br/> I'm Rishabh <span>Shetty</span></h2>
+        <p>I am into <span class="typing-text"></span></p>
+        <a href="#About" class="btn" style="text-decoration: none; color: inherit;">
+            <span>About Me</span>
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials" style="margin-top: 20px;">
+            <ul class="social-icons" style="list-style: none; padding: 0; display: flex; gap: 15px; justify-content: center;">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://linkedin.com/in/rishabhnshetty" target="_blank" style="color: #fff;"><i class="fab fa-linkedin"></i></a></li> 
+                <li><a class="github" aria-label="GitHub" href="https://github.com/risherb" target="_blank" style="color: #fff;"><i class="fab fa-github"></i></a></li>
+                <li><a class="medium" aria-label="Medium" href="https://medium.com/@rishabhshetty2704" target="_blank" style="color: #fff;"><i class="fab fa-medium"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+  <h2 class="heading" style="font-size: 36px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <i class="fas fa-user-alt"></i> 
+    <span style="color: #488bff;">About</span> 
+    <span style="background: linear-gradient(to right, #bc8c12, #ffa44f); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        Me
+    </span>
+</h2>
+
+
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Rishabh</h3>
+        
+        <p>I am a Data Science and Software Development Enthusiast. I am passionate about building AI-powered applications, data visualizations,data analysis and predictive models. I focus on creating impactful solutions using data-driven insights and innovative web applications. </p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> email : </span> rishabhshetty2704@gmail.com</p>
+              <p><span> place : </span> Navi Mumbai, India - 400710</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1-kk1PLJB4hfw7HN6DleMG4-Rs6SlcHks" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+  <h2 class="heading" style="font-size: 36px; font-weight: bold; display: flex; justify-content: center; align-items: center; gap: 10px;">
+      <i class="fas fa-laptop-code"></i> Skills & <span style="color: #ffa44f;">Abilities</span>
+  </h2>
+
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="row" id="skillsContainer" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-items: center; align-items: center; padding: 40px;">
+          
+          <!-- Skill 1: Python -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Python-FFD43B.svg?style=for-the-badge&logo=python&logoColor=black" alt="Python" style="max-width: 100px;"/>
+              <p>Python</p>
+          </div>
+          
+          <!-- Skill 2: Java -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Java-007396.svg?style=for-the-badge&logo=java&logoColor=white" alt="Java" style="max-width: 100px;"/>
+              <p>Java</p>
+          </div>
+          
+          <!-- Skill 3: JavaScript -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" style="max-width: 100px;"/>
+              <p>JavaScript</p>
+          </div>
+          
+          <!-- Skill 4: C -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/C-A8B400.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" style="max-width: 100px;"/>
+              <p>C</p>
+          </div>
+          
+          <!-- Skill 5: HTML5 -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" style="max-width: 100px;"/>
+              <p>HTML5</p>
+          </div>
+          
+          <!-- Skill 6: CSS3 -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" style="max-width: 100px;"/>
+              <p>CSS3</p>
+          </div>
+          
+          <!-- Skill 7: SQL -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/SQL-4479A1.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQL" style="max-width: 100px;"/>
+              <p>SQL</p>
+          </div>
+          
+          <!-- Skill 8: React -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black" alt="React" style="max-width: 100px;"/>
+              <p>React</p>
+          </div>
+          
+          <!-- Skill 9: Flask -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" style="max-width: 100px;"/>
+              <p>Flask</p>
+          </div>
+          
+          <!-- Skill 10: TensorFlow -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/TensorFlow-FF6F20.svg?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" style="max-width: 100px;"/>
+              <p>TensorFlow</p>
+          </div>
+          
+          <!-- Skill 11: Pandas -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" style="max-width: 100px;"/>
+              <p>Pandas</p>
+          </div>
+          
+          <!-- Skill 12: Git -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" style="max-width: 100px;"/>
+              <p>Git</p>
+          </div>
+          
+          <!-- Skill 13: Docker -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" style="max-width: 100px;"/>
+              <p>Docker</p>
+          </div>
+          
+          <!-- Skill 14: Jupyter -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" style="max-width: 100px;"/>
+              <p>Jupyter</p>
+          </div>
+          
+          <!-- Skill 15: Visual Studio Code -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code" style="max-width: 100px;"/>
+              <p>VS Code</p>
+          </div>
+          
+          <!-- Skill 16: Linux -->
+          <div class="skill" style="text-align: center; font-size: 10px;">
+              <img src="https://img.shields.io/badge/Linux-FCC624.svg?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" style="max-width: 100px;"/>
+              <p>Linux</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading" style="font-size: 3rem; font-weight: bold; display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center; width: 100%;">
+    <i class="fas fa-graduation-cap"></i> 
+    <span style="color: #488bff;">My</span> 
+    <span style="color: #ffa44f;">Education</span>
+  </h1>
+  
+    <p class="qoute">Education is not the filling of a pail, but the lighting of a fire.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/college.jpeg" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Technology , Computer Science (Specialization, Data Science)</h3>
+        <p>Manipal University Jaipur </p>
+        <h4>2022-2026 | Pursuing</h4>
+        </div>
+    </div>
+
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+  <h2 class="heading">
+    <i class="fas fa-laptop-code"></i> Projects <span>Made</span>
+  </h2>
+
+  <div class="box-container">
+    <!-- Project 1 -->
+    <div class="project-box">
+      <div class="image-container">
+        <img src="./assets/images/average sentiment polarity.png" alt="Project 1 Image" class="project-img">
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Sentiment & Emotion Analysis of World War I Letters</h3>
+        <p class="project-description">
+          A detailed analysis of sentiment and emotion in historical World War I letters, using NLP to predict outcomes based on writing tone.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/risherb/Sentiment-and-Emotion-Analysis-of-Historical-Letters-Predicting-Outcomes-Based-on-Writing-Tone" target="_blank" class="btn">GitHub</a>
+          <a href="https://medium.com/p/e7a1e942eaff" target="_blank" class="btn">Medium Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-box">
+      <div class="image-container">
+        <img src="./assets/images/SWACHPROJ.png" alt="Project 2 Image" class="project-img">
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">PostLife: AI-Powered Dashboard for Swachhta and LiFE Practices</h3>
+        <p class="project-description">
+          An AI-powered dashboard that helps track Swachhta and LiFE practices at post offices, improving cleanliness and sustainability.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/risherb/SIH-1751" target="_blank" class="btn">GitHub</a>
+          <a href="https://sih-1751.onrender.com/" target="_blank" class="btn">Live Site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-box">
+      <div class="image-container">
+        <img src="./assets/images/FOODPROJ.png" alt="Project 3 Image" class="project-img">
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Global Food Waste Analysis and Forecasting</h3>
+        <p class="project-description">
+          Analyzing global food waste data with the aim of identifying regional trends and forecasting future food waste for sustainability.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/risherb/Global-Food-Waste-Analysis-Economic-and-Environmental-Insights" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-box">
+      <div class="image-container">
+        <img src="./assets/images/FHEPROJ.jpg" alt="Project 4 Image" class="project-img">
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Secure Health Insights with FHE</h3>
+        <p class="project-description">
+          A secure health prediction model using Fully Homomorphic Encryption (FHE), ensuring privacy and security for sensitive health data.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/risherb/FHE-Based-Health-Prediction-" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- View All Button -->
+  <div class="viewall">
+    <a href="https://github.com/risherb" class="btn">
+      <span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+</section>
+
+<style>
+  .work {
+    background-color: #000000;
+    padding: 4rem 0;
+  }
+
+  .work .heading {
+    font-size: 2.5rem;
+    color: #488bff;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .work .heading span {
+    color: #ff5e00; /* Orange color */
+    text-shadow: 2px 2px 8px rgba(255, 94, 0, 0.7);
+  }
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .project-box {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    color: white;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .project-box:hover {
+    transform: rotateY(15deg) translateZ(40px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .project-box:hover .project-img {
+    transform: scale(1.1);
+  }
+
+  .project-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    color: #BEC1DD;
+    margin-bottom: 1rem;
+  }
+
+  .project-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #488bff;
+    color: white;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .project-links a:hover {
+    background-color: #3a6ff2;
+  }
+
+  .viewall {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #0008a8c0;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+
+  .btn i {
+    margin-left: 0.5rem;
+  }
+
+  .btn:hover {
+    background-color: #e87c36;
+  }
+</style>
+
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+
+  <div class="timeline">
+    <div class="container center">
+      <div class="content">
+        <div class="tag">
+          <h2>Tata Nelco</h2>
+        </div>
+        <div class="desc">
+          <h3>IT Intern</h3>
+          <p>Jun 2024 - July 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <!-- experience section ends -->
+  
+  <!-- contact section starts -->
+<section class="contact" id="contact">
+
+  <h2 class="heading"><i class="fas fa-envelope"></i> Contact <span>Me</span></h2>
+
+  <div class="container">
+    <div class="contact-form">
+      <h3>Get In Touch</h3>
+
+      <form action="https://formsubmit.co/rishabhshetty2704@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </div>
+  </div>
+
+</section>
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+<footer>
+  <p>Made with <i class="fas fa-heart"></i> by <span>Rishabh Shetty</span></p>
+</footer>
+<!-- footer section ends -->
+
+<style>
+  /* Contact Section */
+  .contact {
+    background-color: #000000; /* Black background */
+    color: white;
+    padding: 5rem 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact .heading {
+    font-size: 3rem;
+    color: #488bff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for heading */
+  }
+
+  .contact .heading span {
+    color: #ffa44f; /* Accent color for 'Me' */
+  }
+
+  .contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .contact-form {
+    background-color: #13162D; /* Dark card background */
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeInUp 1s ease-in-out; /* Fade-in and slide-up animation */
+  }
+
+  .contact-form h3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2f41;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #BEC1DD; /* Light placeholder text */
+  }
+
+  .contact-form input:hover,
+  .contact-form textarea:hover {
+    background-color: #3b3e56; /* Slight hover effect for input and textarea */
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    background-color: #4a4e68; /* Focus effect */
+    box-shadow: 0 0 10px rgba(72, 139, 255, 0.5); /* Glow effect on focus */
+  }
+
+  .contact-form .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #488bff; /* Accent color for the button */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .contact-form .btn:hover {
+    background-color: #3971e7; /* Hover effect for the button */
+    transform: translateY(-2px);
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #1a1a1a; /* Dark background for footer */
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer i {
+    color: red; /* Red heart for 'Made with love' */
+  }
+
+  footer span {
+    font-weight: bold;
+    color: #488bff;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 2rem;
+      width: 90%;
+    }
+
+    .contact-form h3 {
+      font-size: 1.7rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 1rem;
+    }
+
+    footer {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+  <!-- custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  
+  <script>
+    // Typing animation for the 'I'm into' text
+    var options = {
+      strings: ["Data Science", "Machine Learning", "Data Analysis", "Web Applications"],
+      typeSpeed: 90,
+      backSpeed: 60,
+      loop: true,
+    };
+  
+    var typed = new Typed(".typing-text", options);
+    
+    // Particles effect for the background
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: { enable: true, value_area: 800 }
+        },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 }
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: { distance: 250, size: 0, opacity: 0.8, duration: 2 },
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  
+  </body>
+  </html>
+  
+
+     
